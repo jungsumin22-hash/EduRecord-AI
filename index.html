@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>행발작성기 PRO v12</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div><h1>📘 행발작성기 PRO v12</h1><p>초등 1~6학년 행동특성 및 종합의견 작성 도우미</p></div>
+  <span>DB 분리형 · GitHub Pages 가능</span>
+</header>
+<main>
+<section class="panel">
+<h2>1. 학생 관찰 입력</h2>
+<div class="grid">
+<label>학생 이름/번호<input id="student" placeholder="예: 김OO / 12번"></label>
+<label>학년<select id="grade"><option>전학년</option><option>1~2학년</option><option>3~4학년</option><option selected>5~6학년</option></select></label>
+<label>분량<select id="target"><option value="650">650 byte</option><option value="750" selected>750 byte</option><option value="850">850 byte</option><option value="1000">1000 byte</option></select></label>
+<label>문체<select id="tone"><option value="teacher" selected>40년차 담임</option><option value="official">공식</option><option value="warm">따뜻함</option><option value="short">간결</option></select></label>
+</div>
+<label>자유 메모<textarea id="memo" placeholder="예: 반장, 부반장, 친구들 규칙 지키게 함, 수학 노력, 활발함"></textarea></label>
+<div class="btns">
+<button onclick="autoPick()">메모로 자동 선택</button>
+<button onclick="clearAll()" class="gray">초기화</button>
+</div>
+</section>
+
+<section class="panel">
+<h2>2. 관찰 행동 선택</h2>
+<input id="search" placeholder="검색: 반장, 수학, 발표, 배려, 장난, 정리정돈">
+<div id="tabs" class="tabs"></div>
+<div id="list" class="list"></div>
+</section>
+
+<section class="panel">
+<h2>3. 선택한 행동</h2>
+<div id="selected" class="selected"></div>
+<h3>학생 역량 분석</h3>
+<div id="profile" class="profile">아직 선택한 행동이 없습니다.</div>
+</section>
+
+<section class="panel resultPanel">
+<h2>4. 행발 생성</h2>
+<div class="btns">
+<button onclick="generateAll()" class="primary">✨ 행발 5개 생성</button>
+<button onclick="refineAll()" class="gray">문장 다듬기</button>
+</div>
+<div id="results" class="results">생성 버튼을 누르면 결과가 표시됩니다.</div>
+</section>
+</main>
+<footer>행발작성기 PRO v12</footer>
+<script src="script.js"></script>
+</body>
+</html>

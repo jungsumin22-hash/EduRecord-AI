@@ -1,0 +1,1 @@
+# 행발작성기 PRO v12\n\nindex.html을 실행하세요. GitHub Pages에도 바로 배포 가능합니다.\n
