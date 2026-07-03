@@ -1,1 +1,1 @@
-EduRecord AI Pro v31 merged: v21 키워드 복구 + v30 교사 문체 병합판
+EduRecord AI Pro v40: expanded accordion UI, keyword count 622
